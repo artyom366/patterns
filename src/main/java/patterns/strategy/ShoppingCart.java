@@ -1,0 +1,39 @@
+package patterns.strategy;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Created by Artyom on 11/12/2015.
+ */
+public class ShoppingCart {
+
+    private List<Item> items;
+
+    public ShoppingCart() {
+        this.items = new ArrayList<Item>();
+    }
+
+    public void addItem(Item item) {
+        this.items.add(item);
+    }
+
+    public void removeItem(Item item) {
+        this.items.remove(item);
+    }
+
+    public int calculateTotal() {
+        int sum = 0;
+        for (Item item : items) {
+            sum += item.getPrice();
+        }
+
+        return sum;
+    }
+
+    public void pay(PaymentStrategy paymentStrategy) {
+
+        int total = calculateTotal();
+        paymentStrategy.pay(total);
+    }
+}
