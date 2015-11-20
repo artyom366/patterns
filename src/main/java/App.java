@@ -202,8 +202,24 @@ public class App {
         //largestNumber.getLargestNumber(new int[]{4, 7, 1, 2, 44, 778, 9});
 
         Equilibrium equilibrium = new Equilibrium();
-        System.out.println(equilibrium.anotherSolution(new int[]{3, 1, 2, 4, 3}));
+        System.out.println(equilibrium.anotherSolution(new int[]{3, 1}));
 
+
+//        http://www.programcreek.com/2012/12/leetcode-evaluate-reverse-polish-notation/
+//        http://www.programcreek.com/2014/05/leetcode-largest-rectangle-in-histogram-java/
+//        http://www.programcreek.com/2014/02/leetcode-longest-common-prefix-java/
+//        http://www.programcreek.com/2014/03/leetcode-gas-station-java/
+//        http://www.programcreek.com/2014/03/leetcode-pascals-triangle-java/
+//        http://www.programcreek.com/2014/04/leetcode-pascals-triangle-ii-java/
+//        http://www.programcreek.com/2014/03/leetcode-container-with-most-water-java/
+//        http://www.programcreek.com/2014/03/leetcode-candy-java/
+//        http://www.programcreek.com/2014/06/leetcode-trapping-rain-water-java/
+//        http://www.programcreek.com/2014/03/leetcode-count-and-say-java/
+//        http://www.programcreek.com/2014/06/leetcode-basic-calculator-java/
+//        http://www.programcreek.com/2014/06/leetcode-rectangle-area-java/
+//        http://www.programcreek.com/2013/02/longest-substring-which-contains-2-unique-characters/
+//        http://www.programcreek.com/2013/01/leetcode-triangle-java/
+//        http://www.programcreek.com/2014/05/leetcode-zigzag-conversion-java/
         return;
 
     }
