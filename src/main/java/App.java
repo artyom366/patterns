@@ -1,3 +1,4 @@
+import algorytms.*;
 import enumtype.StatesEnum;
 import jdk.nashorn.internal.runtime.linker.LinkerCallSite;
 import overrride.BaseClass;
@@ -172,23 +173,36 @@ public class App {
         //System.out.println(StatesEnum.DEAD.getDetails());
         //System.out.println(StatesEnum.DEAD);
 
-        List<String> strings = new ArrayList<String>();
-        strings.add("aaa");
-        strings.add("bbb");
-        strings.add("nnn");
+//        List<String> strings = new ArrayList<String>();
+//        strings.add("aaa");
+//        strings.add("bbb");
+//        strings.add("nnn");
+//
+//        Iterator<String> iterator = strings.iterator();
+//
+//        while(iterator.hasNext()){
+//            String s = iterator.next();
+//            System.out.println(s);
+//
+//            if(s.equals("bbb")) {
+//                System.out.println("removing " + s);
+//                iterator.remove();
+//            }
+//        }
 
-        Iterator<String> iterator = strings.iterator();
 
-        while(iterator.hasNext()){
-            String s = iterator.next();
-            System.out.println(s);
+        //System.out.println(AddBinary.addBinary("11", "1"));
+        //WordConcatSubstring.findWordSubstring("barfoothefoobarman", new String[] {"foo", "bar"});
+        //System.out.println(SummaryRanges.getSummaryRanges(new int[]{1, 2, 3, 4, 5, 7, 8,}));
 
-            if(s.equals("bbb")) {
-                System.out.println("removing " + s);
-                iterator.remove();
-            }
-        }
+        //ShortestPalindrome shortestPalindrome = new ShortestPalindrome();
+        //System.out.println(shortestPalindrome.getPalindrome("abcd"));
 
+        //LargestNumber largestNumber = new LargestNumber();
+        //largestNumber.getLargestNumber(new int[]{4, 7, 1, 2, 44, 778, 9});
+
+        Equilibrium equilibrium = new Equilibrium();
+        System.out.println(equilibrium.anotherSolution(new int[]{3, 1, 2, 4, 3}));
 
         return;
 
