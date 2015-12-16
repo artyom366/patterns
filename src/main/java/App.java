@@ -1,31 +1,10 @@
-import algorytms.*;
-import enumtype.StatesEnum;
-import jdk.nashorn.internal.runtime.linker.LinkerCallSite;
-import overrride.BaseClass;
-import overrride.ChildClass;
-import patterns.command.FileInvoker;
-import patterns.command.FileSystemReceiver;
-import patterns.command.FileSystemReceiverUtil;
-import patterns.command.OpenFileCommand;
-import patterns.interpreter.InterpreterClient;
-import patterns.interpreter.InterpreterContext;
-import patterns.iterator.*;
-import patterns.memento.FileWriteUtil;
-import patterns.memento.FileWriterCareTaker;
-import patterns.state.State;
-import patterns.state.TVContext;
-import patterns.state.TVStartState;
-import patterns.state.TVStopState;
-import patterns.visitor.Book;
-import patterns.visitor.Calculator;
-import patterns.visitor.Fruit;
-import patterns.visitor.ItemElement;
+import multi.callable.Runner;
+import multi.lock.ReentrantLockEx1;
+import multi.lock.ReentrantLockEx2;
+import multi.lock.Resource;
 
-import java.io.FileWriter;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * Created by Artyom on 11/2/2015.
@@ -201,8 +180,8 @@ public class App {
         //LargestNumber largestNumber = new LargestNumber();
         //largestNumber.getLargestNumber(new int[]{4, 7, 1, 2, 44, 778, 9});
 
-        Equilibrium equilibrium = new Equilibrium();
-        System.out.println(equilibrium.anotherSolution(new int[]{3, 1}));
+        //Equilibrium equilibrium = new Equilibrium();
+        //System.out.println(equilibrium.anotherSolution(new int[]{3, 1}));
 
 
 //        http://www.programcreek.com/2012/12/leetcode-evaluate-reverse-polish-notation/
@@ -220,6 +199,45 @@ public class App {
 //        http://www.programcreek.com/2013/02/longest-substring-which-contains-2-unique-characters/
 //        http://www.programcreek.com/2013/01/leetcode-triangle-java/
 //        http://www.programcreek.com/2014/05/leetcode-zigzag-conversion-java/
+
+
+//        Runner runner = new Runner();
+//        runner.run();
+
+//        Message message = new Message("message");
+//        Waiter waiter = new Waiter(message);
+//        Notifier notifier = new Notifier(message);
+//
+//        Thread wt = new Thread(waiter, "waiter");
+//        Thread nt = new Thread(notifier, "notifier");
+//
+//        wt.start();
+//        nt.start();
+
+//        ThreadLocalEx threadLocalEx = new ThreadLocalEx();
+//        Thread thread1 = new Thread(threadLocalEx, "th1");
+//        Thread thread2 = new Thread(threadLocalEx, "th2");
+//        thread1.start();
+//        thread2.start();
+
+//        multi.timer.Runner runner = new multi.timer.Runner();
+//        runner.run();
+
+//        ThPool pool = new ThPool();
+//        pool.runScheduled();
+
+//        Lock lock = new ReentrantLock();
+//        Resource resource = new Resource(lock);
+//        Thread thread3 = new Thread(new ReentrantLockEx1(resource, lock), "th1");
+//        Thread thread4 = new Thread(new ReentrantLockEx2(resource, lock), "th2");
+//
+//        thread3.start();
+//        thread4.start();
+
+        Runner runner = new Runner();
+        runner.run();
+
+
         return;
 
     }
